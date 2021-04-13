@@ -1,0 +1,107 @@
+{
+  "id": "2458591",
+  "name": "cloud-music",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13492301",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "19902708",
+      "name": "bridge",
+      "font_class": "bridge",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "19902712",
+      "name": "mountains",
+      "font_class": "mountains",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "19902714",
+      "name": "iceberg",
+      "font_class": "iceberg",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "19902715",
+      "name": "desert-1",
+      "font_class": "desert-1",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "19902706",
+      "name": "cape",
+      "font_class": "cape",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "4712399",
+      "name": "calander",
+      "font_class": "calander",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "7537495",
+      "name": "song-line",
+      "font_class": "song-line",
+      "unicode": "e74e",
+      "unicode_decimal": 59214
+    },
+    {
+      "icon_id": "13715528",
+      "name": "Ionicons md radio",
+      "font_class": "Ioniconsmdradio",
+      "unicode": "eecc",
+      "unicode_decimal": 61132
+    },
+    {
+      "icon_id": "19595851",
+      "name": "rank",
+      "font_class": "rank",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "19902702",
+      "name": "sea",
+      "font_class": "sea",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "10746956",
+      "name": "avatar",
+      "font_class": "avatar",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "14679583",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "18986791",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e8d6",
+      "unicode_decimal": 59606
+    }
+  ]
+}

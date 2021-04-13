@@ -1,0 +1,1 @@
+export const PLAYER_STATE = 'PLAYER_STATE'
