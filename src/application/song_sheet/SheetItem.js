@@ -3,20 +3,16 @@ import { SheetItemWrap } from './style'
 import { Link } from 'react-router-dom'
 
 export default function SheetItem(props) {
-  const setCurrentSheetItem = (item) => {
-    window.sessionStorage.setItem('CURRENT_SHEET_ITEM', JSON.stringify(item))
-  }
-
   return (
-    <Link to={'/playlist?id=' + props.sheetInfo.id}>
-      <SheetItemWrap
-        className="sheet-item"
-        picUrl={props.sheetInfo.src}
-        onClick={() => setCurrentSheetItem(props.sheetInfo)}
-      >
+    <SheetItemWrap
+      className="sheet-item"
+      picUrl={props.sheetInfo.src}
+      onClick={() => props.updateSheet(props.sheetInfo)}
+    >
+      <Link className="item-link" to={'/playlist?id=' + props.sheetInfo.id}>
         <div className="sheet-item__img"></div>
         <p className="sheet-item__detail">{props.sheetInfo.title}</p>
-      </SheetItemWrap>
-    </Link>
+      </Link>
+    </SheetItemWrap>
   )
 }

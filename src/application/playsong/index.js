@@ -71,7 +71,6 @@ export default function SongLayout(props) {
 
   return (
     <>
-      {/* <audio ref={audioRef} className="player" controls></audio> */}
       <Nav title={currentSong.toJS().title}></Nav>
       <RotateWrapper>
         <RotateComp isPlay={playerState} picUrl={currentSong.toJS().picUrl} />
@@ -85,7 +84,6 @@ export default function SongLayout(props) {
             <MenuUnfoldOutlined className="icon" />
           </div>
         </PlayerControl>
-        {/* <audio ref={audioRef} className="player" preload="auto"></audio> */}
       </RotateWrapper>
       <SongBg picUrl={currentSong.toJS().picUrl}></SongBg>
     </>

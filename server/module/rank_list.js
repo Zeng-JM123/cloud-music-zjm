@@ -14,6 +14,8 @@ module.exports = async (req, response, axios) => {
       title: '',
       songInfo: [],
       href: '',
+      path: '',
+      src: $(item).attr('data-src'),
     }
     resData.push(obj)
   })
@@ -24,6 +26,7 @@ module.exports = async (req, response, axios) => {
     resData[index].title = $(item).attr('title')
     resData[index].href = $(item).attr('href')
     resData[index].id = getReqQuery($(item).attr('href')).id
+    resData[index].path = $(item).attr('href')
   })
 
   // 获取歌曲列表

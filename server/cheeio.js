@@ -3,7 +3,7 @@ let fs = require('fs')
 let axios = require('axios')
 //存放获取到的歌曲信息
 let songs = []
-const host = 'http://localhost:8081'
+const host = 'http://localhost:8082'
 
 //爬取网易云音乐热歌榜单内容  https://music.163.com/#/discover/toplist?id=3778678
 //下面榜单数据id可能会更换、以官网为准

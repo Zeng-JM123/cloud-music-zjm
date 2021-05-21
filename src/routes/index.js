@@ -11,13 +11,14 @@ const SuspenseComponent = (Component) => (props) => {
   )
 }
 
-const recommendComponent = lazy(() => import('../application/recommend/'))
 const playListComponent = lazy(() =>
   import('../application/playlist/PlayListContainer.js')
 )
 const PlayerContainer = lazy(() =>
   import('../application/playsong/PlayerContainer')
 )
+
+const TestComponent = lazy(() => import('../application/test/index'))
 
 export default [
   {
@@ -27,10 +28,6 @@ export default [
         path: '/',
         exact: true,
         component: HomeLayout,
-      },
-      {
-        path: '/recommend',
-        component: SuspenseComponent(recommendComponent),
       },
       {
         path: '/playlist',
@@ -51,6 +48,20 @@ export default [
             component: SuspenseComponent(PlayerContainer),
           },
         ],
+      },
+      {
+        path: '/discover',
+        component: SuspenseComponent(playListComponent),
+        routes: [
+          {
+            path: '/playlist?id=',
+            component: SuspenseComponent(playListComponent),
+          },
+        ],
+      },
+      {
+        path: '/test',
+        component: SuspenseComponent(TestComponent),
       },
     ],
   },

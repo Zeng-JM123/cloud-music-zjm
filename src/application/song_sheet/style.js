@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 export const SheetItemWrap = styled.li`
-  height: 100%;
   display: inline-block;
   margin: 10px 0;
   width: 33.3%;
   padding: 0 3px;
+  .item-link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
   .sheet-item__img {
     padding-bottom: 100%;
     border-radius: 10px;

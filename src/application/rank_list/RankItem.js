@@ -3,6 +3,14 @@ import { RankItemLi } from './style'
 import { Link } from 'react-router-dom'
 
 export default function RankItem(props) {
+  const setSheet = () => {
+    props.updateSheet({
+      src: props.src,
+      path: props.path,
+      title: props.title,
+    })
+  }
+
   const RederItem = () => {
     return (
       props.songInfo &&
@@ -18,7 +26,7 @@ export default function RankItem(props) {
   }
   return (
     <RankItemLi picUrl={props.picUrl} bgColor={props.bgColor}>
-      <Link to={'/playlist'}>
+      <Link to={props.href} onClick={setSheet}>
         <div className="rank-item__left">
           <div className="rank-item__left__title">{props.title}</div>
           <div className="rank-item__left__img"></div>

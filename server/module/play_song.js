@@ -3,6 +3,7 @@ let cheerio = require('cheerio')
 module.exports = async (req, response, axios) => {
   let getSongUrl =
     'http://music.163.com/song/media/outer/url?id=' + req.query.id
+  console.log(getSongUrl)
   const res = await axios.get(getSongUrl, { responseType: 'stream' })
   // 创建文件夹 如果没有的话
   if (!fs.existsSync(`./public/song`)) {

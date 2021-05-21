@@ -6,6 +6,7 @@ const mapStateToProps = (state) => {
   return {
     currentSong: state.getIn(['playState', 'currentSong']),
     currentPlayList: state.getIn(['playState', 'currentPlayList']),
+    currentSheet: state.getIn(['sheet', 'currentSheet']),
   }
 }
 
