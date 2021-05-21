@@ -1,0 +1,1 @@
+{"version":3,"sources":["application/test/index.js"],"names":["Test","Component"],"mappings":"mNAEqBA,E,4JACnB,WACE,OAAO,4B,GAFuBC","file":"static/js/5.2ce4a7b7.chunk.js","sourcesContent":["import React, { Component } from 'react'\r\n\r\nexport default class Test extends Component {\r\n  render() {\r\n    return <div>\r\n        \r\n    </div>\r\n  }\r\n}\r\n"],"sourceRoot":""}
